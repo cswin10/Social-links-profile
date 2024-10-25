@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Inter'
+}
+
+img {
+    border-radius: 90px;
+    height: 80px;
+    width: 80px;
+}
+
+p {
+    text-align: center;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.name {
+    font-size: 1.8rem;
+}
+
+.yellow {
+   color: hsl(75, 94%, 57%);
+   padding-bottom: 15px;
+
+}
+.container {
+    background-color:  hsl(0, 0%, 12%);
+    height: 60%;
+    width: 50%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+.button1, .button2, .button3, .button4, .button5 {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    font-family: 'Inter';
+    border-radius: 8px;
+    height: 30px;
+    height: 100%;
+    font-size: 1.2rem;
+    border: none;
+
+
+
+    
+}
+
+
+
+/* For tablets (768px and up) */
+@media (max-width: 768px) {
+    .container {
+        width: 70%;
+        height: 70%;
+        padding: 25px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .button1, .button2, .button3, .button4, .button5 {
+        font-size: 1rem;
+    }
+
+    img {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        height: auto; /* Allows it to expand as needed */
+        padding: 20px;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .button1, .button2, .button3, .button4, .button5 {
+        font-size: 0.9rem;
+        height: 40px; /* Optional adjustment */
+    }
+
+    img {
+        height: 60px;
+        width: 60px;
+    }
+}
